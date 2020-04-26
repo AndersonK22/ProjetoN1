@@ -60,15 +60,12 @@ public class InterfaceUsuarioPais {
         Pais pais = new Pais();
 
         System.out.println(" Novo país");
-        System.out.print("\nInforme o Id: ");
-        pais.setId(in.nextLong());
-        in.nextLine();
 
         System.out.print("Informe o nome do país: ");
         pais.setNome(in.nextLine());
 
         System.out.print("Informe o continente: ");
-        pais.setContinente(in.nextInt());
+        pais.setContinente(in.nextLine());
 
         System.out.print("Informe a populaçao: ");
         pais.setPopulacao(in.nextLong());
@@ -101,7 +98,7 @@ public class InterfaceUsuarioPais {
         pais.setNome(in.nextLine());
 
         System.out.println("Altere do nome do continente: ");
-        pais.setContinente(in.nextInt());
+        pais.setContinente(in.nextLine());
 
         System.out.println("Altere o numero da populaçao: ");
         pais.setPopulacao(in.nextLong());

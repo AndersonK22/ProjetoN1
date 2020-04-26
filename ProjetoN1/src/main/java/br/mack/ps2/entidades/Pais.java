@@ -3,12 +3,12 @@ package br.mack.ps2.entidades;
 public class Pais {
     private long id;
     private String nome;
-    private int continente;
+    private String continente;
     private long populacao;
 
     public Pais() {}
 
-    public Pais(long id, String nome, int continente, long populacao) {
+    public Pais(long id, String nome, String continente, long populacao) {
         this.id = id;
         this.nome = nome;
         this.continente = continente;
@@ -32,11 +32,11 @@ public class Pais {
         this.nome = nome;
     }
 
-    public int getContinente() {
+    public String getContinente() {
         return continente;
     }
 
-    public void setContinente(int continente) {
+    public void setContinente(String continente) {
         this.continente = continente;
     }
 

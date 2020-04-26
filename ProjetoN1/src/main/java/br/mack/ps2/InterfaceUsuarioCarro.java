@@ -56,9 +56,6 @@ public class InterfaceUsuarioCarro{
     private void create() {
         Carro carro = new Carro();
         System.out.println(" Novo carro ");
-        System.out.print("\nInsira o ID do carro: ");
-        carro.setId(in.nextLong());
-        in.nextLine();
         System.out.print("Insira o modelo do carro: ");
         carro.setModelo(in.nextLine());
         System.out.print("Insira a marca do carro: ");

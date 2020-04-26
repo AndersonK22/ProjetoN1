@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CarroDAOMySQL implements CarroDAO {
-        private String createSQL = "INSERT INTO carro VALUES (?, ?, ?, ?)";
+        private String createSQL = "INSERT INTO carro(modelo, marca, ano, categoria) VALUES (?, ?, ?, ?)";
         private String readSQL = "SELECT * FROM carro";
         private String updateSQL = "UPDATE carro SET modelo=?, marca=?, ano=?, categoria=? WHERE id=?";
         private String deleteSQL = "DELETE FROM carro WHERE id=?";

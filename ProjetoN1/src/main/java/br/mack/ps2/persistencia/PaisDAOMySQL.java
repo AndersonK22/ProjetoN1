@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PaisDAOMySQL implements PaisDAO {
-    private String createSQL = "INSERT INTO pais VALUES (?, ?, ?)";
+    private String createSQL = "INSERT INTO pais(nome, continente, populacao) VALUES (?, ?, ?)";
     private String readSQL = "SELECT * FROM pais";
     private String updateSQL = "UPDATE pais SET nome=?, continente=?, populacao=? WHERE id=?";
     private String deleteSQL = "DELETE FROM pais WHERE id=?";
@@ -22,7 +22,7 @@ public class PaisDAOMySQL implements PaisDAO {
             PreparedStatement stm = conexao.prepareStatement(createSQL);
 
             stm.setString(1, pais.getNome());
-            stm.setInt(2, pais.getContinente());
+            stm.setString(2, pais.getContinente());
             stm.setLong(3, pais.getPopulacao());
 
             int registros = stm.executeUpdate();
@@ -56,7 +56,7 @@ public class PaisDAOMySQL implements PaisDAO {
                 Pais pais = new Pais();
                 pais.setId(rs.getLong("id"));
                 pais.setNome(rs.getString("nome"));
-                pais.setContinente(rs.getInt("continente"));
+                pais.setContinente(rs.getString("continente"));
                 pais.setPopulacao(rs.getLong("populacao"));
                 paises.add(pais);
             }
@@ -86,7 +86,7 @@ public class PaisDAOMySQL implements PaisDAO {
             PreparedStatement stm = conexao.prepareStatement(updateSQL);
 
             stm.setString(1, pais.getNome());
-            stm.setInt(2, pais.getContinente());
+            stm.setString(2, pais.getContinente());
             stm.setLong(3, pais.getPopulacao());
             stm.setLong(4, pais.getId());
 
