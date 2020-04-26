@@ -1,4 +1,4 @@
-package org.example;
+package br.mack.ps2;
 
 /**
  * Hello world!
