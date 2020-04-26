@@ -46,7 +46,7 @@ public class InterfaceUsuarioPais {
                     this.delete();
                     break;
                 case 5:
-                    System.out.println("tchau :)");
+                    System.out.println("Finalizado");
                     break;
                 default:
                     System.out.println("Opção Inválida");
