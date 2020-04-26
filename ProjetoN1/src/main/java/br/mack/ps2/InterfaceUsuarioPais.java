@@ -22,11 +22,11 @@ public class InterfaceUsuarioPais {
         int opc = 0;
         do {
             System.out.println(" Menu");
-            System.out.println("\t1. Create");
-            System.out.println("\t2. Read");
-            System.out.println("\t3. Update");
-            System.out.println("\t4. Delete");
-            System.out.println("\t5. sair");
+            System.out.println("\t1. Criar");
+            System.out.println("\t2. Exibir bd");
+            System.out.println("\t3. Atualizar");
+            System.out.println("\t4. Excluir");
+            System.out.println("\t5. Voltar ao menu");
             System.out.print("Escolha uma opção: ");
             opc = in.nextInt();
 
@@ -46,7 +46,7 @@ public class InterfaceUsuarioPais {
                     this.delete();
                     break;
                 case 5:
-                    System.out.println("Finalizado");
+                    System.out.println("Retornando ao menu principal");
                     break;
                 default:
                     System.out.println("Opção Inválida");
