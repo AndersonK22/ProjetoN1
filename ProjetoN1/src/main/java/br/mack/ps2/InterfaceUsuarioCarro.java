@@ -62,7 +62,8 @@ public class InterfaceUsuarioCarro{
         carro.setMarca(in.nextLine());
         System.out.print("Insira o ano do carro: ");
         carro.setAno(in.nextInt());
-        System.out.print("Insira o CAREGORIA do carro: ");
+        in.nextLine();
+        System.out.print("Insira a categoria do carro: ");
         carro.setCategoria(in.nextLine());
         if (dao.create(carro)) {
             System.out.println("Carro adicionado ao banco de Dados");
