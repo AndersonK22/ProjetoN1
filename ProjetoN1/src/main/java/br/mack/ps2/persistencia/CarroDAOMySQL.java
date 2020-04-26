@@ -1,4 +1,4 @@
-package persistencia;
+package br.mack.ps2.persistencia;
 import br.mack.ps2.entidades.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -139,5 +139,3 @@ public class CarroDAOMySQL implements CarroDAO {
         }
     }
 
-
-}

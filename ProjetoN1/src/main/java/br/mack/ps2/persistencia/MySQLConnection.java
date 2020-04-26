@@ -1,7 +1,6 @@
-package persistencia;
+package br.mack.ps2.persistencia;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLDataException;
 import java.sql.SQLException;
 
 public class MySQLConnection {

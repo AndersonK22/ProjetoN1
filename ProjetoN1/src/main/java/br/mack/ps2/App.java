@@ -1,13 +1,11 @@
 package br.mack.ps2;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import br.mack.ps2.persistencia.PaisDAOMySQL;
+
+public class App {
+    public static void main(final String[] args) {
+        PaisDAOMySQL mysqlDAO = new PaisDAOMySQL();
+        Interface anInterface = new Interface(mysqlDAO);
+        anInterface.iniciar();
     }
 }
